@@ -1,0 +1,321 @@
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes scale-up {
+  0% {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.ellipesChild {
+  position: absolute;
+  top: 226px;
+  left: 0;
+  width: 688px;
+  height: 439px;
+  cursor: default;
+  opacity: 0;
+}
+.ellipesChild.animate {
+  animation: 2s ease 0s infinite alternate forwards slide-in-bottom;
+}
+.ellipes,
+.ellipesItem,
+.imageChild {
+  position: absolute;
+  top: 0;
+  left: 17px;
+  width: 530.83px;
+  height: 773.83px;
+  opacity: 0;
+}
+.ellipesItem.animate {
+  animation: 2s ease 0s infinite alternate forwards slide-in-top;
+}
+.ellipes,
+.imageChild {
+  top: 78px;
+  left: 561px;
+  width: 688px;
+  opacity: 1;
+}
+.ellipes.animate {
+  animation: 2s ease 0s 1 normal forwards scale-up;
+}
+.imageChild {
+  top: 129.44px;
+  left: -1.94px;
+  width: 431.9px;
+  height: 246.12px;
+}
+.imageChild.animate {
+  animation: 4s ease 0s infinite alternate forwards rotate-center;
+}
+.cloudStorageImage,
+.imageItem {
+  position: absolute;
+  top: 122.08px;
+  left: 26.58px;
+  width: 375.8px;
+  height: 234.34px;
+  opacity: 1;
+}
+.imageItem.animate {
+  animation: 4s ease 0s infinite alternate-reverse forwards rotate-center;
+}
+.cloudStorageImage {
+  top: 0;
+  left: 10px;
+  width: 449px;
+  height: 364px;
+  object-fit: cover;
+}
+.cloudStorageImage.animate {
+  animation: 2s ease 0s infinite alternate forwards scale-up;
+}
+.image {
+  position: absolute;
+  top: 168px;
+  left: 590px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  width: 459px;
+  height: 374px;
+  opacity: 0;
+}
+.image.animate {
+  animation: 2s ease 0s 1 normal forwards slide-in-right;
+}
+.checkbox {
+  cursor: pointer;
+  position: absolute;
+  top: 47.74px;
+  left: 1px;
+  width: 17.74px;
+  height: 17.74px;
+}
+.span {
+  /* color: var(--color-gray-200); */
+  color: rgba(255, 255, 255, 0.5);
+}
+.terms {
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--color-white);
+}
+.loginHeader,
+.termsBodyTextContainer {
+  position: absolute;
+  display: inline-block;
+}
+.termsBodyTextContainer {
+  top: 47px;
+  left: 29px;
+  width: 302px;
+  height: 24px;
+}
+.loginHeader {
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  width: 464px;
+  color: var(--color-white);
+}
+.googleIcon {
+  position: absolute;
+  height: 70.73%;
+  width: 8.81%;
+  top: 17.07%;
+  right: 87.54%;
+  bottom: 12.2%;
+  left: 3.65%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.signUpWith {
+  position: absolute;
+  height: 73.17%;
+  width: 48.63%;
+  top: 9.76%;
+  left: 25.53%;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: var(--font-athiti);
+  color: var(--color-white);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signUpButton {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 30px;
+  border: 1.3px solid var(--color-white);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.signUpGoogleButton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 86px;
+  left: 0;
+  width: 329px;
+  height: 41px;
+}
+.logOutButton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 166px;
+  left: 0;
+  width: 329px;
+  height: 41px;
+}
+.login {
+  cursor: pointer;
+  color: var(--color-white);
+}
+.loginAnchor {
+  text-decoration: none;
+  position: absolute;
+  top: 128px;
+  left: 82px;
+  font-weight: 500;
+  display: inline-block;
+  width: 167px;
+  height: 23px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.loginSection {
+  position: absolute;
+  top: 522px;
+  left: 115px;
+  width: 464px;
+  height: 157px;
+  opacity: 0;
+}
+.loginSection.animate {
+  animation: 2s ease 0s 1 normal forwards slide-in-bottom;
+}
+.companyNameHeader {
+  position: absolute;
+  width: 98.31%;
+  top: 18.72%;
+  left: 1.69%;
+  font-weight: 600;
+  display: inline-block;
+  color: var(--color-white);
+}
+.comapnyLogoImage {
+  position: absolute;
+  height: 16.58%;
+  width: 13.14%;
+  top: 0;
+  right: 84.96%;
+  bottom: 83.42%;
+  left: 1.91%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.aboutTheCompany {
+  position: absolute;
+  height: 62.3%;
+  width: 69.7%;
+  top: 37.7%;
+  left: 0;
+  font-size: var(--font-size-xl);
+  font-weight: 500;
+  color: var(--color-white);
+  display: inline-block;
+}
+.aboutCompany {
+  position: absolute;
+  top: 69px;
+  left: 106px;
+  width: 472px;
+  height: 374px;
+  opacity: 0;
+  font-size: 40px;
+}
+.aboutCompany.animate {
+  animation: 2s ease 0s 1 normal forwards slide-in-left;
+}
+.locofy {
+  position: relative;
+  border-radius: 4px;
+  /* background: linear-gradient(180deg, #00adb5 79.17%, #222831); */
+  background: linear-gradient(180deg, #000e1e 79.17%, #263aac);
+  box-shadow: 0 8px 10px -6px rgba(0, 0, 0, 0.25),
+    0 10px 20px -5px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 821px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  /* color: var(--color-gray-100); */
+  color: rgba(255, 255, 255, 0.5);
+  font-family: var(--font-athiti);
+}
+

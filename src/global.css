@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Athiti:wght@400;500;600&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-athiti: Athiti;
+
+  /* font sizes */
+  --font-size-xl: 20px;
+  --font-size-sm: 14px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-gray-100: #222831;
+  --color-gray-200: rgba(0, 0, 0, 0.5);
+}

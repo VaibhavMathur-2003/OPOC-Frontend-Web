@@ -1,0 +1,26 @@
+ul{
+    position: relative;
+    display: flex;
+    /* flex-direction: column; */
+    gap: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+ul li
+{
+    position: relative;
+    list-style: none;
+}
+
+ul li a{
+    color:white;
+    text-decoration: none;
+}
+
+ul li a:hover{
+    width: 100%;
+    filter: drop-shadow(0 0 50px #00ade1);
+    text-shadow: 0 0 8px #00ade1;
+
+}

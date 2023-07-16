@@ -1,0 +1,49 @@
+#up-button-lift{
+    /* position: absolute;
+    top: 15%;
+    left: 12%; */
+    /* margin-left:7px; */
+    /* margin-top:-10px; */
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #36b079;
+}
+#down-button-lift{
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #37b079;
+}
+
+#left-door{
+    width:127px;
+    height:366px;
+    background-color: white;
+    animation: left 1s linear .5s forwards;
+}
+#right-door{
+    width:127px;
+    height:366px;
+    background-color: white;
+    animation: left 1s linear .5s forwards;
+}
+@keyframes left {
+    0% {
+        width:129px;
+    }
+    100% {
+        width:5px;
+    }
+}
+
+@keyframes right {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: -48%;
+    }
+}
+
+#lift-main-box{
+    overflow: hidden;
+}
